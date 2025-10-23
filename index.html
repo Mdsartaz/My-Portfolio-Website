@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/e318d0ec57.js" crossorigin="anonymous"></script></head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm <span>Md Sartaz</span><br>From Bihar</h1>
+        </div>
+
+    </div>
+</div>
+<!-- ----------------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I m a dedicated Frontend Developer with a passion for creating clean, user-focused, and visually appealing web experiences. I specialize in building responsive layouts using
+                    HTML, CSS, JavaScript, and Bootstrap, turning ideas into smooth and interactive digital products.</p>
+                    <br>
+                    As a Frontend Developer, I love transforming ideas into beautiful, functional web experiences.
+                    I focus on clean design, responsive layouts, and seamless interactivity using HTML, CSS, JavaScript,
+                    and modern tools. My goal is to build interfaces that not only look great but feel effortless to use.
+
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Html</span></li>
+                    <li><span>Css</span></li>
+                    <li><span>JavaScript</span></li>
+                    <li><span>Java</span></li>
+                    <li><span>C, C++</span></li>
+                    <li><span>Bootstrap</span></li>
+                    <li><span>Git & GitHub</span></li>
+                    <li><span>Figma</span></li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+                <ul>
+                    <li><span>2025 - Current</span><br>Frontend Developer Training at Techgeering Solutions pvt. ltd.</li>
+                    <li><span>1 Month Internship</span><br>Frontend Development Intern at Ajatus Software Company</li>
+                    <li><span>1 Month Internship</span><br>C, C++, Java and Python programming at IIG Varsity</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-2026</span><br>Bachelor's Degree in Computer Science at GIFT College Autonomous Bhubaneswar</li>
+                    <li><span>2019-2021</span><br>Higher Secondary Education at Millat College Laheriasarai,Darbhanga</li>
+                    <li><span>2018-2019</span><br>Bihar School Education at Shri Kameshwar +2 High School Pandaul</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------services----------- -->
+
+<div id="services">
+    <div class="container">
+       <h1 class="sub-title">My Project</h1>
+       <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I design responsive, user-friendly, and visually appealing websites using modern tools.
+                My web design services focus on creativity, clean UI/UX, brand consistency, and SEO optimization for all devices and users.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web From Design</h2>
+                <p>MI design modern, responsive, and user-friendly web forms that enhance user experience. Services include custom form layouts, validation, interactive elements, mobile optimization,
+                and integration with websites or applications for seamless functionality.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I design visually appealing, user-friendly mobile and web apps. Services include UI/UX design, interactive prototypes, responsive layouts, brand consistency, accessibility,
+                and seamless user experiences for Android, iOS, and web platforms.</p>
+                <a href="#">Learn more</a>
+            </div>
+       </div>
+    </div>
+</div>
+
+<!-- -----------------portfolio----------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Todo List App</h3>
+                    <p>A to-do list is a memory aid for organizing, prioritizing,
+                    and tracking tasks that need to be completed.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                 <div class="layer">
+                    <h3>BMI-Calculator</h3>
+                    <p>A BMI calculator estimates your body fat based on your height and weight,
+                    indicating if you are at a healthy weight.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                 <div class="layer">
+                    <h3>Online Quiz App</h3>
+                    <p>An online quiz app is a web or mobile application for taking, creating,
+                    and sharing interactive tests on various topics.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<!-- --------------contact----------- --> 
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> mdsartaz0123se@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9798112096</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1JKhiXaXjP/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ig_sartaz?igsh=MWhkdDB3bTgxYThjOA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Mdsartaz"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/md-sartaz-0798a8202/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                 <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <div class="column"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Md Sartaz. All <i class="fa-solid fa-heart"></i> rights reserved.</p>
+    </div>
+</div>
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+
+<script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname) {
+        for(tablink of tabLinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabContents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwIut3ujbFrhBuhHxnMVxIqT0uf5VvylxTImutS7fvl0gYfpao6SgEF5tFbiht4hIJb/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
